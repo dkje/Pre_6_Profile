@@ -1,0 +1,39 @@
+.align-center-container {
+    width: 90%;
+    max-width: 80rem;
+    height: 5rem;
+    padding: 1rem 3rem;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid $grey-light;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--container {
+    margin-top: 8rem;
+}
+
+.banner__scroll {
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.banner__bottomfix-container {
+    width: 100%;
+    background-color: $black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

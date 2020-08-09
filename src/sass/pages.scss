@@ -1,0 +1,123 @@
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+    .text--email {
+        text-align: right;
+        font-size: 1.3rem;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 3rem;
+        color: $grey;
+    }
+}
+
+.main--container {
+    .personal {
+        margin-bottom: 15rem;
+        &--pic {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-top: 65%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &--title {
+            margin-top: 1.5rem;
+        }
+
+        &--subtitle {
+            margin-top: 0.3rem;
+            display: flex;
+            .subtitle {
+                color: $grey;
+            }
+
+            .personal--location {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    height: 1.4rem;
+                    border-left: 1px solid $grey;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        &--hashtags {
+            margin-top: 3rem;
+        }
+
+        &--summary {
+            background-color: $grey-light;
+            margin-top: 3rem;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .summary-box {
+                margin-bottom: 2rem;
+            }
+
+            .header-secondary {
+                grid-column: span 2;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--question {
+            margin-top: 4rem;
+        }
+    }
+}
+
+.banner__bottomfix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $grey;
+    align-items: center;
+
+    span {
+        color: $cyan;
+    }
+
+    .button-box {
+        text-align: right;
+        .btn__git {
+            font-weight: $font-weight-extra-bold;
+            color: $grey-dark;
+            background-color: $cyan;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+
+            &:hover {
+                transition: 0.3s;
+                color: $black;
+            }
+        }
+    }
+}
+
+.banner__scroll {
+    font-weight: $font-weight-bold;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 0rem;
+    left: 0;
+    background-color: $cyan;
+    transition: 0.5s;
+}

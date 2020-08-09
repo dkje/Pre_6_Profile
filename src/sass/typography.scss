@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+    color: $black;
+}
+
+body {
+    font-family: $font-default;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.header-primary {
+    font-family: $font-default;
+    font-weight: $font-weight-extra-bold;
+    font-size: 2rem;
+}
+
+.header-secondary {
+    font-size: 2rem;
+    font-weight: $font-weight-bold;
+}
+
+.summary-title {
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
+    color: $grey-dark;
+}
+
+.summary-text {
+    font-weight: $font-weight-normal;
+    word-break: keep-all;
+}
+
+.question {
+    font-weight: $font-weight-bold;
+    margin-top: 2rem;
+}
+
+.anwser {
+    margin-top: 0.5rem;
+}
